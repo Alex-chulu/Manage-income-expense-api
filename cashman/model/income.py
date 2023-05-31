@@ -12,7 +12,7 @@ class Income(Transaction):
         return '<Income(name={self.description!r})>'.format(self=self)
     
 
-class IncomesSchema(TransactionSchema):
+class IncomeSchema(TransactionSchema):
     
     @post_load
     def make_income(self, data, **kwargs):
